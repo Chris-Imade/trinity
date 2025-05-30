@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skills Training Success Stories - Trinity Relief Initiative</title>
+    <title>Empowering Lives Through Skills Training</title>
 
     <!--=====FAB ICON=======-->
     <link
@@ -25,186 +25,688 @@
     <link rel="stylesheet" href="../assets/css/plugins/nice-select.css" />
     <link rel="stylesheet" href="../assets/css/plugins/lightbox.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Empowering Lives Through Skills Training</title>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          rel="stylesheet"
+        />
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+              Roboto, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+          }
+
+          .vl-blog-single {
+            padding: 3rem 0;
+          }
+
+          .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+          }
+
+          .vl-blog-single-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+          }
+
+          .vl-blog-single-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+            background-size: 200% 100%;
+            animation: gradientShift 3s ease-in-out infinite;
+          }
+
+          @keyframes gradientShift {
+            0%,
+            100% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+          }
+
+          .vl-blog-single-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.15);
+          }
+
+          .blog-thumb {
+            margin-bottom: 2.5rem;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+          }
+
+          .blog-thumb img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.6s ease;
+          }
+
+          .blog-thumb:hover img {
+            transform: scale(1.05);
+          }
+
+          .blog-thumb::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+              45deg,
+              rgba(102, 126, 234, 0.1),
+              rgba(118, 75, 162, 0.1)
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+
+          .blog-thumb:hover::after {
+            opacity: 1;
+          }
+
+          .blog-meta {
+            margin-bottom: 2rem;
+          }
+
+          .blog-meta ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(
+              135deg,
+              rgba(102, 126, 234, 0.1),
+              rgba(118, 75, 162, 0.1)
+            );
+            border-radius: 12px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+          }
+
+          .blog-meta li {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #4a5568;
+            font-weight: 500;
+          }
+
+          .blog-meta i {
+            margin-right: 0.75rem;
+            color: #667eea;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+          }
+
+          .blog-meta li:hover i {
+            transform: scale(1.2);
+            color: #764ba2;
+          }
+
+          .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+
+          .subtitle {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin: 2.5rem 0 1rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+          }
+
+          .subtitle::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+          }
+
+          .para {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            line-height: 1.8;
+          }
+
+          .blog-tags,
+          .blog-share {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(
+              135deg,
+              rgba(240, 147, 251, 0.1),
+              rgba(102, 126, 234, 0.1)
+            );
+            border-radius: 16px;
+            border: 1px solid rgba(240, 147, 251, 0.2);
+          }
+
+          .blog-tags h4,
+          .blog-share h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+          }
+
+          .blog-tags ul,
+          .blog-share ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+          }
+
+          .blog-tags a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+          }
+
+          .blog-tags a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #764ba2, #667eea);
+          }
+
+          .blog-share {
+            margin-bottom: 0;
+          }
+
+          .blog-share a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+          }
+
+          .blog-share a:hover {
+            transform: translateY(-3px) rotate(5deg);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+          }
+
+          .blog-share i {
+            font-size: 1.2rem;
+          }
+
+          @media (max-width: 768px) {
+            .vl-blog-single-content {
+              padding: 2rem;
+              margin: 1rem;
+            }
+
+            .title {
+              font-size: 2rem;
+            }
+
+            .subtitle {
+              font-size: 1.3rem;
+            }
+
+            .para {
+              font-size: 1rem;
+            }
+
+            .blog-meta ul {
+              flex-direction: column;
+              gap: 1rem;
+            }
+
+            .blog-tags ul,
+            .blog-share ul {
+              justify-content: center;
+            }
+          }
+
+          /* Floating animation for social icons */
+          @keyframes float {
+            0%,
+            100% {
+              transform: translateY(0px);
+            }
+            50% {
+              transform: translateY(-5px);
+            }
+          }
+
+          .blog-share a:nth-child(1) {
+            animation: float 3s ease-in-out infinite;
+          }
+          .blog-share a:nth-child(2) {
+            animation: float 3s ease-in-out infinite 0.5s;
+          }
+          .blog-share a:nth-child(3) {
+            animation: float 3s ease-in-out infinite 1s;
+          }
+        </style>
+      </head>
+
+      <body class="homepage1-body">
+        <!-- Header section -->
+        <header>
+          <div
+            class="header-area homepage1 header header-sticky d-none d-lg-block mt-16"
+            id="header"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="header-elements header-elements-1">
+                    <div class="site-logo">
+                      <a href="../index.html"
+                        ><img
+                          src="../assets/img/logo/vl-logo-1.1.png"
+                          style="width: 70px; border-radius: 50%"
+                          alt=""
+                      /></a>
+                    </div>
+                    <div class="main-menu">
+                      <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../event.html">Events</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../service.html">Our Services</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                    <div class="header-btn d-flex align-items-center">
+                      <a href="../donate.html" class="header-btn1"
+                        >Donate Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!--===== BREADCRUMB AREA STARTS =======-->
+        <section
+          class="vl-breadcrumb"
+          style="background-image: url(../assets/img/breadcrumb/vl-blog-bg.png)"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="vl-breadcrumb-title">
+                  <h2 class="heading">Skills Training Success Stories</h2>
+                  <div class="vl-breadcrumb-list">
+                    <span><a href="../index.html">Home</a></span>
+                    <span class="dvir"
+                      ><i class="fa-solid fa-angle-right"></i
+                    ></span>
+                    <span><a href="../blog.html">Blog</a></span>
+                    <span class="dvir"
+                      ><i class="fa-solid fa-angle-right"></i
+                    ></span>
+                    <span
+                      ><a class="active" href="#"
+                        >Skills Training Success Stories</a
+                      ></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="vl-blog-single sp2">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="vl-blog-single-content">
+                  <div class="blog-thumb">
+                    <img
+                      src="/assets/img/blog/vl-blog-inner-1.1.jpg"
+                      alt="Skills Training Workshop"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="blog-meta">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-calendar"></i> March 15, 2024
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-user"></i> By Trinity Relief Team
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-folder"></i> Skills Development
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="title">
+                    Empowering Lives Through Skills Training
+                  </h2>
+                  <p class="para">
+                    Our vocational training program has been making significant
+                    strides in equipping returnees with marketable skills. This
+                    article shares the inspiring stories of three participants
+                    who have successfully transitioned into sustainable
+                    employment, demonstrating the transformative power of
+                    education and community support.
+                  </p>
+
+                  <h3 class="subtitle">The Impact of Practical Skills</h3>
+                  <p class="para">
+                    Through our comprehensive training programs, we've witnessed
+                    remarkable transformations in the lives of our participants.
+                    From foundational technical competencies to advanced
+                    vocational specializations, each program is meticulously
+                    designed to address the specific needs and aspirations of
+                    our diverse community. Our holistic approach combines
+                    hands-on learning with mentorship, ensuring participants not
+                    only acquire skills but also develop the confidence to apply
+                    them in real-world scenarios.
+                  </p>
+
+                  <h3 class="subtitle">Success Stories</h3>
+                  <p class="para">
+                    Meet Sarah, John, and Michael - three extraordinary
+                    individuals whose lives exemplify the transformative impact
+                    of our skills training initiative. Sarah, once uncertain
+                    about her future, now manages her own tailoring business,
+                    employing three other community members. John transitioned
+                    from unemployment to becoming a certified electrician,
+                    securing stable employment with a local construction
+                    company. Michael's journey from basic computer literacy to
+                    web development has enabled him to work remotely for
+                    international clients. Their stories illuminate the profound
+                    difference that targeted skill development can make in
+                    rebuilding lives and restoring hope.
+                  </p>
+
+                  <h3 class="subtitle">Looking Forward</h3>
+                  <p class="para">
+                    As we continue to expand our training programs and forge new
+                    partnerships with local industries, we remain steadfast in
+                    our commitment to providing world-class education and
+                    comprehensive support to all returnees seeking to rebuild
+                    their lives. Our vision extends beyond individual success
+                    stories to creating a sustainable ecosystem where skilled
+                    individuals contribute to their communities' economic
+                    growth. Your continued support and engagement make these
+                    remarkable transformations possible, turning challenges into
+                    opportunities and dreams into reality.
+                  </p>
+
+                  <div class="blog-tags">
+                    <h4>Tags:</h4>
+                    <ul>
+                      <li><a href="#">Skills Training</a></li>
+                      <li><a href="#">Success Stories</a></li>
+                      <li><a href="#">Employment</a></li>
+                      <li><a href="#">Community Development</a></li>
+                      <li><a href="#">Vocational Education</a></li>
+                      <li><a href="#">Empowerment</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--===== FOOTER AREA STARTS =======-->
+        <footer class="vl-footer-bg-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="vl-footer-widget-1 mb-30">
+                  <div class="vl-footer-logo">
+                    <a href="index.html"
+                      ><img
+                        src="assets/img/logo/vl-footer-logo-1.1.png"
+                        style="width: 100px; border-radius: 50%; height: 100px"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="vl-footer-content">
+                    <p>
+                      Join us in our mission to support returnees and migrants.
+                      Together, we can create pathways to hope and opportunity
+                      for those seeking to rebuild their lives with dignity.
+                    </p>
+                  </div>
+                  <div class="vl-footer-social-1">
+                    <ul>
+                      <li>
+                        <a href="index.html#"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="index.html#"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="index.html#"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="index.html#"
+                          ><i class="fa-brands fa-github"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="vl-footer-widget-2 pl-90 mb-30">
+                  <h3 class="title">Quick Links</h3>
+                  <div class="vl-footer-menu">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="blog.html">News & Blog</a></li>
+                      <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="vl-footer-widget-2 pl-30 mb-30">
+                  <h3 class="title">Our Services</h3>
+                  <div class="vl-footer-menu">
+                    <ul>
+                      <li>
+                        <a href="service.html#reintegration"
+                          >Reintegration Assistance</a
+                        >
+                      </li>
+                      <li>
+                        <a href="service.html#psychosocial"
+                          >Psychosocial Support</a
+                        >
+                      </li>
+                      <li>
+                        <a href="service.html#livelihood"
+                          >Livelihood Development</a
+                        >
+                      </li>
+                      <li>
+                        <a href="service.html#community"
+                          >Community Engagement</a
+                        >
+                      </li>
+                      <li><a href="service.html#advocacy">Advocacy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="vl-footer-widget-3 mb-30">
+                  <h3 class="title">Contact Us</h3>
+                  <!-- single box -->
+                  <div class="vl-footer-icon-list">
+                    <div class="vl-footer-icon">
+                      <span
+                        ><img
+                          src="assets/img/icons/vl-footer-ic-1.1.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <div class="vl-footer-text">
+                      <a href="mailto:Trinityrelief10@gmail.com"
+                        >Trinityrelief10@gmail.com</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- single box -->
+                  <div class="vl-footer-icon-list">
+                    <div class="vl-footer-icon">
+                      <span
+                        ><img
+                          src="assets/img/icons/vl-footer-ic-1.2.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <div class="vl-footer-text">
+                      <a href="contact.html#location">Delta State, Nigeria</a>
+                    </div>
+                  </div>
+
+                  <!-- single box -->
+                  <div class="vl-footer-icon-list">
+                    <div class="vl-footer-icon">
+                      <span
+                        ><img src="assets/img/icons/vl-footer-2.1.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="vl-footer-text">
+                      <a href="tel:+2348155618729">+234 815 561 8729</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vl-copyright copyright-border-1">
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="vl-copyright-text">
+                    © 2024 Trinity Relief Initiative For Returnees And Migrants.
+                    All Rights Reserved.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <div class="vl-copyright-menu">
+                    <ul>
+                      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                      <li>
+                        <a href="terms-conditions.html">Terms & Conditions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--===== FOOTER AREA ENDS =======-->
+
+        <!--===== JS SCRIPT LINK =======-->
+        <script src="../assets/js/plugins/jquery-3.7.1.min.js"></script>
+        <script src="../assets/js/plugins/bootstrap.min.js"></script>
+        <script src="../assets/js/plugins/fontawesome.js"></script>
+        <script src="../assets/js/plugins/aos.js"></script>
+        <script src="../assets/js/plugins/counter.js"></script>
+        <script src="../assets/js/plugins/sidebar.js"></script>
+        <script src="../assets/js/plugins/magnific-popup.js"></script>
+        <script src="../assets/js/plugins/mobilemenu.js"></script>
+        <script src="../assets/js/plugins/owlcarousel.min.js"></script>
+        <script src="../assets/js/plugins/swiper-bundle.min.js"></script>
+        <script src="../assets/js/plugins/nice-select.js"></script>
+        <script src="../assets/js/plugins/jquery.counterup.min.js"></script>
+        <script src="../assets/js/plugins/waypoints.js"></script>
+        <script src="../assets/js/plugins/slick-slider.js"></script>
+        <script src="../assets/js/plugins/circle-progress.js"></script>
+        <script src="../assets/js/plugins/gsap.min.js"></script>
+        <script src="../assets/js/plugins/ScrollTrigger.min.js"></script>
+        <script src="../assets/js/plugins/Splitetext.js"></script>
+        <script src="../assets/js/plugins/lightbox.js"></script>
+        <script src="../assets/js/main.js"></script>
+      </body>
+    </html>
   </head>
-
-  <body class="homepage1-body">
-
-    <!-- Header section -->
-    <header>
-      <div
-        class="header-area homepage1 header header-sticky d-none d-lg-block mt-16"
-        id="header"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="header-elements header-elements-1">
-                <div class="site-logo">
-                  <a href="../index.html"
-                    ><img src="../assets/img/logo/vl-logo-1.1.png" style="width: 70px; border-radius: 50%;" alt=""
-                  /></a>
-                </div>
-                <div class="main-menu">
-                  <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../event.html">Events</a></li>
-                    <li><a href="../blog.html">Blog</a></li>
-                    <li><a href="../service.html">Our Services</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                  </ul>
-                </div>
-                <div class="header-btn d-flex align-items-center">
-                  <a href="../donate.html" class="header-btn1">Donate Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!--===== BREADCRUMB AREA STARTS =======-->
-    <section
-      class="vl-breadcrumb"
-      style="background-image: url(../assets/img/breadcrumb/vl-blog-bg.png)"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="vl-breadcrumb-title">
-              <h2 class="heading">Skills Training Success Stories</h2>
-              <div class="vl-breadcrumb-list">
-                <span><a href="../index.html">Home</a></span>
-                <span class="dvir"
-                  ><i class="fa-solid fa-angle-right"></i
-                ></span>
-                <span><a href="../blog.html">Blog</a></span>
-                <span class="dvir"
-                  ><i class="fa-solid fa-angle-right"></i
-                ></span>
-                <span
-                  ><a class="active" href="#"
-                    >Skills Training Success Stories</a
-                  ></span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Content Area -->
-    <section class="vl-blog-single sp2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="vl-blog-single-content">
-              <div class="blog-thumb">
-                <img
-                  src="../assets/img/blog/vl-blg-1.1.png"
-                  alt="Skills Training Workshop"
-                  class="w-100"
-                />
-              </div>
-              <div class="blog-meta">
-                <ul>
-                  <li><i class="fa-solid fa-calendar"></i> March 15, 2024</li>
-                  <li>
-                    <i class="fa-solid fa-user"></i> By Trinity Relief Team
-                  </li>
-                  <li><i class="fa-solid fa-folder"></i> Skills Development</li>
-                </ul>
-              </div>
-              <h2 class="title">Empowering Lives Through Skills Training</h2>
-              <p class="para">
-                Our vocational training program has been making significant
-                strides in equipping returnees with marketable skills. This
-                article shares the inspiring stories of three participants who
-                have successfully transitioned into sustainable employment.
-              </p>
-
-              <h3 class="subtitle">The Impact of Practical Skills</h3>
-              <p class="para">
-                Through our comprehensive training programs, we've seen
-                remarkable transformations in the lives of our participants.
-                From basic technical skills to advanced vocational training,
-                each program is designed to meet the specific needs of our
-                community.
-              </p>
-
-              <h3 class="subtitle">Success Stories</h3>
-              <p class="para">
-                Meet Sarah, John, and Michael - three individuals whose lives
-                have been transformed through our skills training initiative.
-                Their journeys from uncertainty to stable employment demonstrate
-                the power of practical education and support.
-              </p>
-
-              <h3 class="subtitle">Looking Forward</h3>
-              <p class="para">
-                As we continue to expand our training programs, we remain
-                committed to providing quality education and support to all
-                returnees seeking to rebuild their lives. Your support makes
-                these success stories possible.
-              </p>
-
-              <div class="blog-tags">
-                <h4>Tags:</h4>
-                <ul>
-                  <li><a href="#">Skills Training</a></li>
-                  <li><a href="#">Success Stories</a></li>
-                  <li><a href="#">Employment</a></li>
-                  <li><a href="#">Community Development</a></li>
-                </ul>
-              </div>
-
-              <div class="blog-share">
-                <h4>Share This Post:</h4>
-                <ul>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer section -->
-    <footer class="vl-footer-bg-1">
-      <!-- Footer content here -->
-    </footer>
-
-    <!--===== JS SCRIPT LINK =======-->
-    <script src="../assets/js/plugins/jquery-3.7.1.min.js"></script>
-    <script src="../assets/js/plugins/bootstrap.min.js"></script>
-    <script src="../assets/js/plugins/fontawesome.js"></script>
-    <script src="../assets/js/plugins/aos.js"></script>
-    <script src="../assets/js/plugins/counter.js"></script>
-    <script src="../assets/js/plugins/sidebar.js"></script>
-    <script src="../assets/js/plugins/magnific-popup.js"></script>
-    <script src="../assets/js/plugins/mobilemenu.js"></script>
-    <script src="../assets/js/plugins/owlcarousel.min.js"></script>
-    <script src="../assets/js/plugins/swiper-bundle.min.js"></script>
-    <script src="../assets/js/plugins/nice-select.js"></script>
-    <script src="../assets/js/plugins/jquery.counterup.min.js"></script>
-    <script src="../assets/js/plugins/waypoints.js"></script>
-    <script src="../assets/js/plugins/slick-slider.js"></script>
-    <script src="../assets/js/plugins/circle-progress.js"></script>
-    <script src="../assets/js/plugins/gsap.min.js"></script>
-    <script src="../assets/js/plugins/ScrollTrigger.min.js"></script>
-    <script src="../assets/js/plugins/Splitetext.js"></script>
-    <script src="../assets/js/plugins/lightbox.js"></script>
-    <script src="../assets/js/main.js"></script>
-  </body>
 </html>

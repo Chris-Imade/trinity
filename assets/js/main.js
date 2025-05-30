@@ -761,3 +761,4 @@ function selectAmount(button, amount) {
   button.classList.add("selected");
   document.getElementById("displayAmount").textContent = `$${amount}`;
 }
+
